@@ -1,5 +1,15 @@
+import TeamsTable from "../components/TeamsTable";
+import { Typography } from "@mui/material";
+import { useTeams } from "../context/TeamsContext";
+
 function Home() {
-    return <h1>Home Page</h1>;
+    const { teams } = useTeams();
+    return (
+        <>
+            <Typography variant="h3">Registered Teams</Typography>
+            <TeamsTable data={teams} />
+        </>
+    );
 }
 
 export default Home;
