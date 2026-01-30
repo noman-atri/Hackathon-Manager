@@ -22,7 +22,7 @@ export const teamsData: Team[] = [
     teamName: "UI Wizards",
     projectName: "Design System Builder",
     membersCount: 2,
-    track: "Open",
+    track: "Mobile",
     status: "Not Started",
   },
 ];
