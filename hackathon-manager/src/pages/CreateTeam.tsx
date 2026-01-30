@@ -47,7 +47,7 @@ function CreateTeam() {
   return (
     <Box maxWidth={600}>
       <Typography variant="h5" gutterBottom>
-        Add Team
+        Register Team
       </Typography>
 
       <TeamForm key={formKey} onSubmit={onSubmit} submitLabel="Register" />

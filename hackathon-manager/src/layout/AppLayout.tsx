@@ -23,7 +23,7 @@ export default function AppLayout() {
       >
         <Toolbar>
           <Typography variant="h6" noWrap component="div">
-            Hackathon Management Platform
+            Hackathon Manager
           </Typography>
         </Toolbar>
       </AppBar>
