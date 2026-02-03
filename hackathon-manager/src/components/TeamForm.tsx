@@ -10,6 +10,7 @@ import {
   RadioGroup,
   FormControlLabel,
   Radio,
+  Typography,
 } from "@mui/material";
 import type { TeamStatus } from "../models/Team";
 
@@ -86,20 +87,26 @@ const TeamForm: React.FC<TeamFormProps> = ({
           />
 
           {/* Track */}
-          <FormControl>
-            <FormLabel>Track</FormLabel>
+          <FormControl error={!!errors.track}>
+            <FormLabel required>Track</FormLabel>
             <Controller
               name="track"
               control={control}
               rules={{ required: "Track is required" }}
               render={({ field }) => (
                 <Select<TrackOption, false>
+                  inputId="track-select"
                   options={trackOptions}
                   value={trackOptions.find((opt) => opt.value === field.value)}
                   onChange={(opt) => field.onChange(opt?.value)}
                 />
               )}
             />
+            {errors.track && (
+              <Typography variant="caption" color="error" sx={{ mt: 0.5 }}>
+                {errors.track.message}
+              </Typography>
+            )}
           </FormControl>
 
           {/* Status */}
