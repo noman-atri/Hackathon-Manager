@@ -45,8 +45,7 @@ test.describe("Editing existing team tests", () => {
     // Header row = 0, first data row = 1
     const firstTeamRow = page.getByRole("row").nth(1);
 
-    const teamIdLink = firstTeamRow.getByRole("link");
-    await teamIdLink.click();
+    await firstTeamRow.getByRole("link").click();
 
     // Fill in the team name
     await page.getByLabel(/team name/i).fill("");
