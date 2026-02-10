@@ -60,7 +60,7 @@ test.describe("Landing page testing", () => {
 
     // Type in the search box
     const searchBox = page.getByLabel(/search/i);
-    await searchBox.fill("Code");
+    await searchBox.fill("Code Ninjas");
 
     // After searching
     const rows = page.getByRole("row");
