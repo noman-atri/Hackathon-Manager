@@ -1,4 +1,4 @@
-import Team from "../models/Team";
+import type Team from "../models/Team";
 
 export const teamsData: Team[] = [
   {
@@ -19,10 +19,58 @@ export const teamsData: Team[] = [
   },
   {
     id: "3",
-    teamName: "UI Wizards",
-    projectName: "Design System Builder",
-    membersCount: 2,
+    teamName: "Mobile Mavericks",
+    projectName: "Offline Notes App",
+    membersCount: 4,
     track: "Mobile",
     status: "Not Started",
+  },
+  {
+    id: "4",
+    teamName: "Data Dragons",
+    projectName: "Fraud Detection Engine",
+    membersCount: 5,
+    track: "AI",
+    status: "In-Progress",
+  },
+  {
+    id: "5",
+    teamName: "Pixel Pushers",
+    projectName: "Landing Page Builder",
+    membersCount: 3,
+    track: "Web",
+    status: "Completed",
+  },
+  {
+    id: "6",
+    teamName: "App Alchemists",
+    projectName: "Cross-Platform Fitness App",
+    membersCount: 5,
+    track: "Mobile",
+    status: "In-Progress",
+  },
+  {
+    id: "7",
+    teamName: "Neural Knights",
+    projectName: "AI Interview Coach",
+    membersCount: 3,
+    track: "AI",
+    status: "Not Started",
+  },
+  {
+    id: "8",
+    teamName: "Frontend Force",
+    projectName: "Design System Playground",
+    membersCount: 2,
+    track: "Web",
+    status: "Not Started",
+  },
+  {
+    id: "9",
+    teamName: "Pocket Coders",
+    projectName: "Expense Tracker Mobile App",
+    membersCount: 4,
+    track: "Mobile",
+    status: "Completed",
   },
 ];

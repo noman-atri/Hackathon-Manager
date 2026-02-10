@@ -48,6 +48,9 @@ export default function AppLayout() {
           <ListItemButton component={Link} to="/create">
             <ListItemText primary="Add Team" />
           </ListItemButton>
+          <ListItemButton component={Link} to="/projects">
+            <ListItemText primary="Projects" />
+          </ListItemButton>
         </List>
       </Drawer>
 
